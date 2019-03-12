@@ -17,10 +17,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <ImageCarousel/>
+      <ImageCarousel productId={this.state.productId}/>
     )
   }
 }
 
 
-ReactDOM.render(<App />, document.getElementById('images'));
+ReactDOM.render(<App />, document.getElementById('photos'));
