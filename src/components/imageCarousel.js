@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
- 
+
+const createRandom = () => {
+  return(Math.ceil(Math.random() * 40))
+
+}
 class DemoCarousel extends Component {
     constructor(props) {
       super(props);
@@ -9,28 +13,22 @@ class DemoCarousel extends Component {
         return (
             <Carousel>
                 <div>
-                    <img src="./assets/images/5_Star_Rating_System_1_star_T.png" />
-                    {/* <p className="legend">Legend 1</p> */}
+                    <img src={`https://s3.us-east-2.amazonaws.com/reviews-hir-app/Product+Pictures/${this.props.productId}.jpeg`} />
                 </div>
                 <div>
-                    <img src="./assets/images/5_Star_Rating_System_2_and_a_half_stars_T.png" />
-                    {/* <p className="legend">Legend 2</p> */}
+                <img src={`https://s3.us-east-2.amazonaws.com/reviews-hir-app/Product+Pictures/${createRandom()}.jpeg`} />
                 </div>
                 <div>
-                    <img src="./assets/images/5_Star_Rating_System_2_stars_T.png" />
-                    {/* <p className="legend">Legend 3</p> */}
+                <img src={`https://s3.us-east-2.amazonaws.com/reviews-hir-app/Product+Pictures/${createRandom()}.jpeg`} />
                 </div>
                 <div>
-                    <img src="./assets/images/5_Star_Rating_System_2_stars_T.png" />
-                    {/* <p className="legend">Legend 3</p> */}
+                <img src={`https://s3.us-east-2.amazonaws.com/reviews-hir-app/Product+Pictures/${createRandom()}.jpeg`} />
                 </div>
                 <div>
-                    <img src="./assets/images/5_Star_Rating_System_2_stars_T.png" />
-                    {/* <p className="legend">Legend 3</p> */}
+                <img src={`https://s3.us-east-2.amazonaws.com/reviews-hir-app/Product+Pictures/${createRandom()}.jpeg`} />
                 </div>
                 <div>
-                    <img src="./assets/images/5_Star_Rating_System_2_stars_T.png" />
-                    {/* <p className="legend">Legend 3</p> */}
+                <img src={`https://s3.us-east-2.amazonaws.com/reviews-hir-app/Product+Pictures/${createRandom()}.jpeg`} />
                 </div>
             </Carousel>
         );
